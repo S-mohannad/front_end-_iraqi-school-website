@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مميزات المدرسة</title>
+  <link rel="stylesheet" href="./advantages.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="img/icon" href="./photo_3_2024-03-29_21-38-43.jpg" />
+</head>
+<body>
+
+  <button class="scroll-top" id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="العودة للأعلى">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <header>
+    <div class="header-inner">
+      <img class="school-logo" src="./photo_1_2024-03-29_21-38-43.jpg" alt="شعار المدرسة" />
+      <h1 class="main-title">مميزات المدرسة</h1>
+      <p class="main-subtitle">بيئة تعليمية متكاملة تنمّي العقل والروح والجسد</p>
+      <div class="stats-bar">
+        <div class="stat-item"><span class="stat-num">١٢٠٠+</span><span class="stat-label">طالب</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-item"><span class="stat-num">٨٥+</span><span class="stat-label">معلم متخصص</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-item"><span class="stat-num">٦</span><span class="stat-label">مرافق متكاملة</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-item"><span class="stat-num">٢٥+</span><span class="stat-label">سنة خبرة</span></div>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="#playgrounds" class="nav-btn nav-red">🏟️ الملاعب</a>
+      <a href="#offices"     class="nav-btn nav-orange">🏢 المكاتب</a>
+      <a href="#yards"       class="nav-btn nav-yellow">🌳 الساحات</a>
+      <a href="#clinic"      class="nav-btn nav-green">🏥 المستوصف</a>
+      <a href="#skills"      class="nav-btn nav-blue">🎨 المهارات</a>
+      <a href="#technology"  class="nav-btn nav-purple">💻 التكنولوجيا</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- الملاعب -->
+    <section id="playgrounds" class="section sec-red">
+      <h2 class="sec-title">🏟️ الملاعب والرياضة</h2>
+      <div class="img-row">
+        <div class="img-wrap"><img src="./photo_3_2024-03-29_21-33-49.jpg" alt="ملعب كرة القدم" /><span class="img-caption">ملعب كرة القدم</span></div>
+        <div class="img-wrap"><img src="./photo_1_2024-03-29_21-33-01.jpg" alt="ملعب متعدد الأغراض" /><span class="img-caption">ملعب متعدد الأغراض</span></div>
+        <div class="img-wrap"><img src="./photo_6_2024-03-29_21-40-43.jpg" alt="ملعب السلة والطائرة" /><span class="img-caption">ملعب السلة والطائرة</span></div>
+      </div>
+      <div class="sec-body">
+        <p class="sec-desc">ملاعب متعددة مجهّزة بأحدث المعدات — كرة القدم والسلة والطائرة ومسار الجري — بطولات داخلية دورية تعزز روح المنافسة.</p>
+        <div class="quality-grid">
+          <div class="q-card"><i class="fa-solid fa-star"></i><strong>عشب صناعي</strong><span>معتمد FIFA</span></div>
+          <div class="q-card"><i class="fa-solid fa-lightbulb"></i><strong>إضاءة ليلية</strong><span>تتيح الأنشطة مساءً</span></div>
+          <div class="q-card"><i class="fa-solid fa-shield-halved"></i><strong>سياج أماني</strong><span>حماية كاملة للطلاب</span></div>
+          <div class="q-card"><i class="fa-solid fa-dumbbell"></i><strong>معدات رسمية</strong><span>مستوفية المعايير الدولية</span></div>
+          <div class="q-card"><i class="fa-solid fa-trophy"></i><strong>٤ بطولات سنوياً</strong><span>بين الفصول</span></div>
+          <div class="q-card"><i class="fa-solid fa-person-running"></i><strong>٦ مدربين</strong><span>شهادات معتمدة</span></div>
+        </div>
+      </div>
+      <div class="tab-box">
+        <div class="tab-btns">
+          <button class="tab-btn active" data-tab="sports-schedule">جدول الأنشطة</button>
+          <button class="tab-btn" data-tab="sports-rules">قواعد الملعب</button>
+        </div>
+        <div class="tab-content active" id="sports-schedule">
+          <table class="info-table">
+            <tr><th>النشاط</th><th>الأيام</th><th>الوقت</th></tr>
+            <tr><td>⚽ كرة القدم</td><td>الأحد – الثلاثاء</td><td>٣:٠٠ – ٤:٣٠ م</td></tr>
+            <tr><td>🏀 كرة السلة</td><td>الاثنين – الأربعاء</td><td>٣:٠٠ – ٤:٣٠ م</td></tr>
+            <tr><td>🏐 كرة الطائرة</td><td>الخميس</td><td>٣:٠٠ – ٤:٠٠ م</td></tr>
+            <tr><td>🏃 مسار الجري</td><td>يومياً</td><td>٧:٠٠ – ٧:٣٠ ص</td></tr>
+          </table>
+        </div>
+        <div class="tab-content" id="sports-rules">
+          <ul class="rules-list">
+            <li><i class="fa-solid fa-check"></i> ارتداء الزي الرياضي الرسمي إلزامي</li>
+            <li><i class="fa-solid fa-check"></i> احترام المدرب وقرارات الحكم</li>
+            <li><i class="fa-solid fa-check"></i> المحافظة على نظافة الملعب</li>
+            <li><i class="fa-solid fa-check"></i> ممنوع الدخول بالأحذية العادية للأرضيات</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- المكاتب -->
+    <section id="offices" class="section sec-orange">
+      <h2 class="sec-title">🏢 المكاتب والمرافق الإدارية</h2>
+      <div class="img-row">
+        <div class="img-wrap"><img src="./photo_1_2024-03-29_21-40-43.jpg" alt="مكتب المدير" /><span class="img-caption">مكتب المدير</span></div>
+        <div class="img-wrap"><img src="./photo_3_2024-03-29_21-40-43.jpg" alt="غرفة المعلمين" /><span class="img-caption">غرفة المعلمين</span></div>
+        <div class="img-wrap"><img src="./photo_4_2024-03-29_21-40-43.jpg" alt="المكتبة المدرسية" /><span class="img-caption">المكتبة</span></div>
+      </div>
+      <div class="sec-body">
+        <p class="sec-desc">طاقم إداري متخصص في مكاتب مجهّزة بالكامل — مكتبة تضم +٥٠٠٠ مرجع ورقمي مفتوحة يومياً.</p>
+        <div class="quality-grid">
+          <div class="q-card"><i class="fa-solid fa-book"></i><strong>٥٠٠٠+ مرجع</strong><span>ورقي ورقمي</span></div>
+          <div class="q-card"><i class="fa-solid fa-wifi"></i><strong>إنترنت مخصص</strong><span>في كل مكتب</span></div>
+          <div class="q-card"><i class="fa-solid fa-headset"></i><strong>إرشاد طلابي</strong><span>مستشار نفسي دائم</span></div>
+          <div class="q-card"><i class="fa-solid fa-camera"></i><strong>مراقبة ذكية</strong><span>كاميرات HD داخلية</span></div>
+          <div class="q-card"><i class="fa-solid fa-print"></i><strong>مركز طباعة</strong><span>لخدمة المعلمين</span></div>
+          <div class="q-card"><i class="fa-solid fa-clock"></i><strong>دوام موسّع</strong><span>٧ص – ٥م يومياً</span></div>
+        </div>
+      </div>
+      <div class="contact-box">
+        <h3 class="box-title"><i class="fa-solid fa-envelope"></i> تواصل مع الإدارة</h3>
+        <div class="contact-form">
+          <input type="text" placeholder="اسمك الكريم" id="cf-name" />
+          <input type="text" placeholder="موضوع الرسالة" id="cf-subject" />
+          <textarea placeholder="رسالتك..." id="cf-msg" rows="3"></textarea>
+          <button onclick="sendContact()"><i class="fa-solid fa-paper-plane"></i> إرسال</button>
+        </div>
+        <p class="form-feedback" id="cf-feedback"></p>
+      </div>
+    </section>
+
+    <!-- الساحات -->
+    <section id="yards" class="section sec-yellow">
+      <h2 class="sec-title">🌳 الساحات والحدائق</h2>
+      <div class="img-row">
+        <div class="img-wrap"><img src="./photo_8_2024-03-29_21-40-43.jpg" alt="الحديقة المدرسية" /><span class="img-caption">الحديقة المدرسية</span></div>
+        <div class="img-wrap"><img src="./photo_7_2024-03-29_21-40-43.jpg" alt="ساحة الاستراحة" /><span class="img-caption">ساحة الاستراحة</span></div>
+        <div class="img-wrap"><img src="./photo_2_2024-03-29_21-38-43.jpg" alt="المساحات الخضراء" /><span class="img-caption">المساحات الخضراء</span></div>
+      </div>
+      <div class="sec-body">
+        <p class="sec-desc">مساحات خضراء منسّقة تُشجّع على التفكير الإبداعي — تُستخدم للدروس البيئية والأنشطة الخارجية.</p>
+        <div class="quality-grid">
+          <div class="q-card"><i class="fa-solid fa-tree"></i><strong>٢٠٠+ شجرة</strong><span>تُظلل الساحات</span></div>
+          <div class="q-card"><i class="fa-solid fa-seedling"></i><strong>حديقة تعليمية</strong><span>لمادة العلوم</span></div>
+          <div class="q-card"><i class="fa-solid fa-droplet"></i><strong>ري آلي</strong><span>موفّر للمياه</span></div>
+          <div class="q-card"><i class="fa-solid fa-chair"></i><strong>١٥ جلسة مظللة</strong><span>مناطق استراحة</span></div>
+          <div class="q-card"><i class="fa-solid fa-recycle"></i><strong>بيئة نظيفة</strong><span>حاويات تدوير ملونة</span></div>
+          <div class="q-card"><i class="fa-solid fa-sun"></i><strong>ألواح شمسية</strong><span>طاقة متجددة</span></div>
+        </div>
+      </div>
+      <div class="poll-box">
+        <h3 class="box-title"><i class="fa-solid fa-chart-bar"></i> ما المكان المفضل لديك وقت الاستراحة؟</h3>
+        <div class="poll-options" id="pollOpts">
+          <button class="poll-btn" onclick="vote(this,'الحديقة الخضراء')">🌿 الحديقة الخضراء</button>
+          <button class="poll-btn" onclick="vote(this,'ساحة اللعب')">⛹️ ساحة اللعب</button>
+          <button class="poll-btn" onclick="vote(this,'المقاعد المظللة')">🪑 المقاعد المظللة</button>
+          <button class="poll-btn" onclick="vote(this,'المكتبة')">📚 المكتبة</button>
+        </div>
+        <p class="poll-result" id="pollResult"></p>
+      </div>
+    </section>
+
+    <!-- المستوصف والمصلى -->
+    <section id="clinic" class="section sec-green">
+      <h2 class="sec-title">🏥 المستوصف والمصلى</h2>
+      <div class="img-row">
+        <div class="img-wrap"><img src="./photo_7_2024-03-29_21-36-58.jpg" alt="المستوصف الصحي" /><span class="img-caption">المستوصف الصحي</span></div>
+        <div class="img-wrap"><img src="./photo_2_2024-03-29_21-40-43.jpg" alt="المصلى" /><span class="img-caption">المصلى</span></div>
+        <div class="img-wrap"><img src="./photo_2_2024-03-29_21-36-58.jpg" alt="خدمات الإسعاف" /><span class="img-caption">خدمات الإسعاف</span></div>
+      </div>
+      <div class="sec-body">
+        <p class="sec-desc">مستوصف بطاقم طبي دائم لحالات الطوارئ — مصلى واسع يستوعب جميع الطلاب والكادر التعليمي.</p>
+        <div class="quality-grid">
+          <div class="q-card"><i class="fa-solid fa-user-doctor"></i><strong>طبيب دائم</strong><span>+ ممرضة متخصصة</span></div>
+          <div class="q-card"><i class="fa-solid fa-kit-medical"></i><strong>إسعافات أولية</strong><span>تجديد شهري</span></div>
+          <div class="q-card"><i class="fa-solid fa-truck-medical"></i><strong>تنسيق طوارئ</strong><span>مع أقرب مستشفى</span></div>
+          <div class="q-card"><i class="fa-solid fa-mosque"></i><strong>مصلى واسع</strong><span>يتسع لـ ٣٠٠ مصلٍّ</span></div>
+          <div class="q-card"><i class="fa-solid fa-droplet"></i><strong>وضوء منظّم</strong><span>دورات مياه مجاورة</span></div>
+          <div class="q-card"><i class="fa-solid fa-bell"></i><strong>أذان داخلي</strong><span>تنبيه تلقائي بالصلاة</span></div>
+        </div>
+      </div>
+      <div class="prayer-box">
+        <h3 class="box-title"><i class="fa-solid fa-mosque"></i> مواعيد الصلاة اليوم</h3>
+        <div class="prayer-times" id="prayerTimes"></div>
+      </div>
+    </section>
+
+    <!-- تنمية المهارات -->
+    <section id="skills" class="section sec-blue">
+      <h2 class="sec-title">🎨 تنمية المهارات والأنشطة</h2>
+      <div class="img-row">
+        <div class="img-wrap"><img src="./photo_1_2024-03-29_21-36-58.jpg" alt="دروس الرسم" /><span class="img-caption">دروس الرسم</span></div>
+        <div class="img-wrap"><img src="./photo_5_2024-03-29_21-36-58.jpg" alt="صناعة الفخار" /><span class="img-caption">صناعة الفخار</span></div>
+        <div class="img-wrap"><img src="./photo_6_2024-03-29_21-36-58.jpg" alt="الدروس الموسيقية" /><span class="img-caption">الموسيقى</span></div>
+      </div>
+      <div class="sec-body">
+        <p class="sec-desc">برامج إبداعية متنوعة بإشراف متخصصين — رسم، خزف، موسيقى، خطابة، مسرح — معارض دورية لعرض إبداعات الطلاب.</p>
+        <div class="quality-grid">
+          <div class="q-card"><i class="fa-solid fa-palette"></i><strong>٨ أنشطة إبداعية</strong><span>رسم، نحت، تصوير…</span></div>
+          <div class="q-card"><i class="fa-solid fa-music"></i><strong>استوديو موسيقي</strong><span>آلات متعددة</span></div>
+          <div class="q-card"><i class="fa-solid fa-masks-theater"></i><strong>فرقة مسرحية</strong><span>٣ عروض سنوياً</span></div>
+          <div class="q-card"><i class="fa-solid fa-microphone"></i><strong>نادي الخطابة</strong><span>ثقة بالنفس</span></div>
+          <div class="q-card"><i class="fa-solid fa-medal"></i><strong>جوائز دورية</strong><span>للطلاب المتميزين</span></div>
+          <div class="q-card"><i class="fa-solid fa-chalkboard-user"></i><strong>مدرّبون محترفون</strong><span>شهادات دولية</span></div>
+        </div>
+      </div>
+      <div class="register-box">
+        <h3 class="box-title"><i class="fa-solid fa-clipboard-list"></i> سجّل في نشاط</h3>
+        <div class="register-form">
+          <input type="text" placeholder="اسم الطالب" id="reg-name" />
+          <select id="reg-activity">
+            <option value="">اختر النشاط</option>
+            <option>🎨 الرسم والفنون</option>
+            <option>🎵 الموسيقى</option>
+            <option>🏺 صناعة الفخار</option>
+            <option>🎭 المسرح</option>
+            <option>🎤 الخطابة</option>
+            <option>📸 التصوير الفوتوغرافي</option>
+          </select>
+          <button onclick="registerActivity()"><i class="fa-solid fa-check"></i> تأكيد التسجيل</button>
+        </div>
+        <p class="form-feedback" id="reg-feedback"></p>
+      </div>
+    </section>
+
+    <!-- التكنولوجيا -->
+    <section id="technology" class="section sec-purple">
+      <h2 class="sec-title">💻 التكنولوجيا والبنية الرقمية</h2>
+      <div class="img-row">
+        <div class="img-wrap"><img src="./photo_3_2024-03-29_21-36-58.jpg" alt="مختبر الحاسوب" /><span class="img-caption">مختبر الحاسوب</span></div>
+        <div class="img-wrap"><img src="./photo_4_2024-03-29_21-36-58.jpg" alt="السبورات الذكية" /><span class="img-caption">السبورات الذكية</span></div>
+        <div class="img-wrap"><img src="./photo_5_2024-03-29_21-40-43.jpg" alt="الفصول الرقمية" /><span class="img-caption">الفصول الرقمية</span></div>
+      </div>
+      <div class="sec-body">
+        <p class="sec-desc">سبورات ذكية تفاعلية في كل فصل — مختبر حاسوب بمواصفات عالية — منصة تعليمية إلكترونية متاحة ٢٤/٧.</p>
+        <div class="quality-grid">
+          <div class="q-card"><i class="fa-solid fa-computer"></i><strong>٦٠ جهاز حاسوب</strong><span>Core i7 / RAM 16GB</span></div>
+          <div class="q-card"><i class="fa-solid fa-chalkboard"></i><strong>سبورة ذكية</strong><span>في كل الـ ٣٢ فصلاً</span></div>
+          <div class="q-card"><i class="fa-solid fa-wifi"></i><strong>إنترنت ١ Gbps</strong><span>شبكة مؤمّنة</span></div>
+          <div class="q-card"><i class="fa-solid fa-robot"></i><strong>دروس AI</strong><span>ذكاء اصطناعي</span></div>
+          <div class="q-card"><i class="fa-solid fa-cloud"></i><strong>منصة سحابية</strong><span>واجبات ودرجات أونلاين</span></div>
+          <div class="q-card"><i class="fa-solid fa-shield"></i><strong>حماية رقمية</strong><span>فلترة محتوى للطلاب</span></div>
+        </div>
+      </div>
+      <div class="tech-counter">
+        <h3 class="box-title"><i class="fa-solid fa-chart-line"></i> بالأرقام</h3>
+        <div class="counter-grid">
+          <div class="counter-item"><span class="count-num" data-target="32">0</span><span class="count-label">فصلاً رقمياً</span></div>
+          <div class="counter-item"><span class="count-num" data-target="60">0</span><span class="count-label">جهاز حاسوب</span></div>
+          <div class="counter-item"><span class="count-num" data-target="1200">0</span><span class="count-label">طالب مستفيد</span></div>
+          <div class="counter-item"><span class="count-num" data-target="99">0</span><span class="count-label">٪ وقت التشغيل</span></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="./photo_1_2024-03-29_21-38-43.jpg" alt="شعار المدرسة" class="footer-logo" />
+        <p>مدرسة متكاملة تُشكّل قادة الغد</p>
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="iraqi_school.html">🏠 الصفحة الرئيسية</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/School" target="_blank">📖 حول المدرسة</a></li>
+          <li><a href="mailto:info@school.edu.iq">📧 اتصل بنا</a></li>
+          <li><a href="#technology">👨‍💼 الفريق</a></li>
+          <li><a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">🆕 جديد</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.facebook.com"  target="_blank" title="فيسبوك"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.youtube.com"   target="_blank" title="يوتيوب"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.google.com"    target="_blank" title="غوغل"><i class="fa-brands fa-google"></i></a>
+        <a href="https://www.tiktok.com"    target="_blank" title="تيك توك"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://www.instagram.com" target="_blank" title="إنستغرام"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>جميع الحقوق محفوظة &copy; 2024 — تصميم <span>Saif Muhannad & Ammar Saad</span></p>
+    </div>
+  </footer>
+
+  <script>
+    /* زر الأعلى */
+    window.addEventListener('scroll', () => {
+      document.getElementById('scrollTopBtn').style.opacity = window.scrollY > 300 ? '1' : '0';
+    });
+
+    /* التبويبات */
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const parent = btn.closest('.tab-box');
+        parent.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        parent.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById(btn.dataset.tab).classList.add('active');
+      });
+    });
+
+    /* نموذج التواصل */
+    function sendContact() {
+      const n = document.getElementById('cf-name').value.trim();
+      const s = document.getElementById('cf-subject').value.trim();
+      const m = document.getElementById('cf-msg').value.trim();
+      const fb = document.getElementById('cf-feedback');
+      if (!n || !s || !m) { fb.textContent = '⚠️ يرجى تعبئة جميع الحقول.'; fb.style.color='#ffe066'; return; }
+      fb.textContent = 'تم إرسال رسالتك بنجاح ' + n + '! سنتواصل معك قريباً.';
+      fb.style.color = '#afffb8';
+      document.getElementById('cf-name').value='';
+      document.getElementById('cf-subject').value='';
+      document.getElementById('cf-msg').value='';
+    }
+
+    /* استطلاع */
+    function vote(btn, choice) {
+      document.querySelectorAll('.poll-btn').forEach(b => b.disabled = true);
+      btn.classList.add('poll-voted');
+      document.getElementById('pollResult').textContent = 'سجّلنا اختيارك: "' + choice + '" — شكراً لمشاركتك!';
+    }
+
+    /* تسجيل نشاط */
+    function registerActivity() {
+      const n = document.getElementById('reg-name').value.trim();
+      const a = document.getElementById('reg-activity').value;
+      const fb = document.getElementById('reg-feedback');
+      if (!n || !a) { fb.textContent = '⚠️ يرجى إدخال الاسم واختيار النشاط.'; fb.style.color='#ffe066'; return; }
+      fb.textContent = 'تم تسجيل "' + n + '" في نشاط ' + a + ' بنجاح!';
+      fb.style.color = '#afffb8';
+      document.getElementById('reg-name').value='';
+      document.getElementById('reg-activity').value='';
+    }
+
+    /* مواعيد الصلاة */
+    const prayers = [
+      { name:'الفجر',  time:'٤:١٥ ص', icon:'🌙' },
+      { name:'الظهر',  time:'١٢:١٥ م', icon:'☀️' },
+      { name:'العصر',  time:'٣:٤٥ م', icon:'🌤️' },
+      { name:'المغرب', time:'٦:٣٠ م', icon:'🌇' },
+      { name:'العشاء', time:'٨:٠٠ م', icon:'🌃' },
+    ];
+    const pt = document.getElementById('prayerTimes');
+    prayers.forEach(p => {
+      pt.innerHTML += '<div class="prayer-item"><span class="pr-icon">' + p.icon + '</span><span class="pr-name">' + p.name + '</span><span class="pr-time">' + p.time + '</span></div>';
+    });
+
+    /* عداد الأرقام */
+    const counters = document.querySelectorAll('.count-num');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = +el.dataset.target;
+          let count = 0;
+          const step = Math.ceil(target / 60);
+          const interval = setInterval(() => {
+            count = Math.min(count + step, target);
+            el.textContent = count;
+            if (count >= target) clearInterval(interval);
+          }, 25);
+          observer.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(c => observer.observe(c));
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ar" dir="rtl"> <!--إضافة dir=rtl لان الموقع عربي، هذا يصحح اتجاه النص والعناصر-->
+<head>
+  <meta charset="UTF-8"> <!--إضافة charset ضروري جدا لعرض الحروف العربية بشكل صحيح في كل المتصفحات-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--إضافة viewport لجعل الموقع متجاوب مع الموبايل-->
+  <title>التسجيل الالكتروني</title>
+  <link rel="icon" type="img/icon" href="photo_2026-06-26_07-25-13.jpg"/>    
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="sign_in.css">
+</head>
+<body>
+<div class="section">
+     <div class="container"><!--مسطره تحت-->
+      <div class="row full-height justify-content-center"> <!--توسيط الشاشة-->
+        <div class="col-12 text-center align-self-center py-5"><!--توسيط الشاشة-->
+            <h6 class="mb-0 pb-3"><span>التسجيل الدخول اولي </span><span>تسجيل دخول</span></h6>
+                  <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/><!-- اظهار سهم التبديل -->
+                  <label for="reg-log"></label><!-- اظهار سهم التبديل-->
+            <div class="card-3d-wrap mx-auto"><!--تسلسل الموقع-->
+              <div class="card-3d-wrapper"><!-- تحويلة السهم  -->
+                <div class="card-front"><!--اظهار قائمة التسجيل الاولي-->
+                  <div class="center-wrap"><!--اظهار محتويات القائمتين-->
+                    <div class="section text-center"><!--اظهار قائمة التسجيل الاولي-->
+                      <h4 class="mb-4 pb-3">تسجيل </h4>
+                      <form id="loginForm" novalidate><!--إضافة form و novalidate لنتحكم نحن بالتحقق من الحقول بدل المتصفح-->
+                      <div class="form-group"><!--ترتيب @@-->
+    <input type="email" id="loginEmail" class="form-style" placeholder="البريد الالكتروني" required autocomplete="email"> <!--إضافة required و autocomplete لتحسين التحقق وتعبئة المتصفح التلقائية-->
+                        <i class="input-icon uil uil-at"></i><!--مسح @@-->
+                        <small class="error-msg" id="loginEmailError"></small><!--إضافة مكان لرسالة الخطأ تحت كل حقل-->
+                      </div>  
+                      <div class="form-group mt-2"><!--ترتيب القفل-->
+                        <input type="password" id="loginPassword" class="form-style" placeholder="كلمة السر" required minlength="6" autocomplete="current-password">
+                        <i class="input-icon uil uil-lock-alt toggle-password" data-target="loginPassword"></i><!--مسح القفل، أصبحت أيضا زر لإظهار/إخفاء كلمة السر-->
+                        <small class="error-msg" id="loginPasswordError"></small>
+                      </div>
+                      <button type="submit" class="btn mt-4">دخول الموقع</button><!--تحويل من a إلى button داخل form ليتم التحقق من الحقول قبل الانتقال-->
+                      <p class="mb-0 mt-4 text-center"><a href="https://n9.cl/uckn7" class="link"> نسيت كلمة المرور؟</a></p>
+                      </form>
+                        </div>
+                      </div>
+                    </div>
+                <div class="card-back"><!--فصل الواجهتين-->
+                  <div class="center-wrap"><!--فصل الواجهتين-->
+                      <h4 class="mb-3 pb-3">تسجيل اولي</h4>
+                      <form id="signupForm" novalidate><!--إضافة form و novalidate لنفس سبب فورم تسجيل الدخول-->
+                      <div class="form-group"><!--ترتيب ايموجي الاسم-->
+                        <input type="text" id="fullName" class="form-style" placeholder="الاسم الكامل" required minlength="3" autocomplete="name">
+                        <i class="input-icon uil uil-user"></i><!--حذف ايموجي الاسم-->
+                        <small class="error-msg" id="fullNameError"></small>
+                      </div>  
+                      <div class="form-group mt-2"><!--ترتيب ايموجي الهاتف-->
+                        <input type="tel" id="phoneNumber" class="form-style" placeholder="رقم الهاتف" required pattern="[0-9+]{8,15}" autocomplete="tel"> <!--إضافة pattern للتحقق ان الرقم يحتوي ارقام فقط-->
+                        <i class="input-icon uil uil-phone"></i><!--حذف ايموجي الهاتف-->
+                        <small class="error-msg" id="phoneNumberError"></small>
+                      </div>  
+                      <div class="form-group mt-2"><!--ترتيب  @ الاولي-->
+                        <input type="email" id="signupEmail" class="form-style" placeholder="البريد الالكتروني" required autocomplete="email">
+                        <i class="input-icon uil uil-at"></i><!--حذف ايموجي @-->
+                        <small class="error-msg" id="signupEmailError"></small>
+                      </div>
+                      <div class="form-group mt-2"><!--ترتيب ايموجي القفل الاولي-->
+                        <input type="password" id="signupPassword" class="form-style" placeholder="كلمة السر" required minlength="6" autocomplete="new-password">
+                        <i class="input-icon uil uil-lock-alt toggle-password" data-target="signupPassword"></i><!--حذف ايموجي القفل، أصبحت أيضا زر لإظهار/إخفاء كلمة السر-->
+                        <small class="error-msg" id="signupPasswordError"></small>
+                        </div>
+                      <button type="submit" class="btn mt-4">تسجيل في الموقع</button><!--تحويل من a إلى button داخل form لنفس سبب فورم تسجيل الدخول-->
+                      </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+<script>
+// هذا الكود الجديد يضيف: تبديل اظهار/اخفاء كلمة السر + تحقق بسيط من الحقول قبل الانتقال لصفحة iraqi_school.html
+// لم يتم حذف أي شيء من الكود الأصلي، فقط تمت إضافة هذا الجزء لتحسين تجربة المستخدم
+
+// 1) تفعيل زر اظهار/اخفاء كلمة السر عند الضغط على ايقونة القفل
+document.querySelectorAll('.toggle-password').forEach(function (icon) {
+  icon.style.cursor = 'pointer';
+  icon.addEventListener('click', function () {
+    var input = document.getElementById(icon.getAttribute('data-target'));
+    if (input.type === 'password') {
+      input.type = 'text';
+      icon.classList.remove('uil-lock-alt');
+      icon.classList.add('uil-lock-open-alt');
+    } else {
+      input.type = 'password';
+      icon.classList.remove('uil-lock-open-alt');
+      icon.classList.add('uil-lock-alt');
+    }
+  });
+});
+
+// 2) دالة مساعدة لعرض رسالة خطأ تحت الحقل المطلوب
+function showError(input, message) {
+  var errorEl = document.getElementById(input.id + 'Error');
+  if (message) {
+    input.classList.add('input-invalid');
+    if (errorEl) errorEl.textContent = message;
+  } else {
+    input.classList.remove('input-invalid');
+    if (errorEl) errorEl.textContent = '';
+  }
+}
+
+// 3) التحقق من فورم تسجيل الدخول قبل الانتقال للصفحة التالية
+document.getElementById('loginForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var email = document.getElementById('loginEmail');
+  var password = document.getElementById('loginPassword');
+  var valid = true;
+
+  if (!email.value.includes('@')) {
+    showError(email, 'يرجى كتابة بريد الكتروني صحيح');
+    valid = false;
+  } else {
+    showError(email, '');
+  }
+
+  if (password.value.length < 6) {
+    showError(password, 'كلمة السر يجب ان تكون 6 احرف او اكثر');
+    valid = false;
+  } else {
+    showError(password, '');
+  }
+
+  if (valid) {
+    window.location.href = 'iraqi_school.html';
+  }
+});
+
+// 4) التحقق من فورم التسجيل الاولي قبل الانتقال للصفحة التالية
+document.getElementById('signupForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var name = document.getElementById('fullName');
+  var phone = document.getElementById('phoneNumber');
+  var email = document.getElementById('signupEmail');
+  var password = document.getElementById('signupPassword');
+  var valid = true;
+
+  if (name.value.trim().length < 3) {
+    showError(name, 'يرجى كتابة الاسم الكامل');
+    valid = false;
+  } else {
+    showError(name, '');
+  }
+
+  if (!/^[0-9+]{8,15}$/.test(phone.value.trim())) {
+    showError(phone, 'يرجى كتابة رقم هاتف صحيح');
+    valid = false;
+  } else {
+    showError(phone, '');
+  }
+
+  if (!email.value.includes('@')) {
+    showError(email, 'يرجى كتابة بريد الكتروني صحيح');
+    valid = false;
+  } else {
+    showError(email, '');
+  }
+
+  if (password.value.length < 6) {
+    showError(password, 'كلمة السر يجب ان تكون 6 احرف او اكثر');
+    valid = false;
+  } else {
+    showError(password, '');
+  }
+
+  if (valid) {
+    window.location.href = 'iraqi_school.html';
+  }
+});
+</script>
+</body>
+</html>

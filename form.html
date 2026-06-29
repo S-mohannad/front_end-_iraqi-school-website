@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>استمارة تسجيل الطلاب</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./form.css" />
+  <link rel="icon" type="img/icon" href="./photo_2026-06-26_08-36-07.jpg" />
+</head>
+<body>
+
+<div class="reg-card">
+  <div class="reg-header">
+    <div class="school-logo">🏫</div>
+    <h1>استمارة تسجيل الطلاب</h1>
+    <p>يرجى تعبئة جميع الحقول المطلوبة بدقة</p>
+  </div>
+
+  <div class="fill-progress-wrap">
+    <div class="fill-progress-label">
+      <span>اكتمال الاستمارة</span>
+      <span id="fillPct">0%</span>
+    </div>
+    <div class="fill-progress-bar">
+      <div class="fill-progress-fill" id="fillBar"></div>
+    </div>
+  </div>
+
+  <div class="reg-body">
+
+    <div class="section">
+      <div class="section-title"><span class="section-icon">👤</span> المعلومات الشخصية</div>
+      <div class="field-row three">
+        <div class="field-group">
+          <label>الاسم الأول <span class="req">*</span></label>
+          <input type="text" name="first_name" placeholder="محمد" required>
+          <span class="error-msg">هذا الحقل مطلوب</span>
+        </div>
+        <div class="field-group">
+          <label>الاسم الأوسط <span class="req">*</span></label>
+          <input type="text" name="middle_name" placeholder="أحمد" required>
+          <span class="error-msg">هذا الحقل مطلوب</span>
+        </div>
+        <div class="field-group">
+          <label>اسم العائلة <span class="req">*</span></label>
+          <input type="text" name="last_name" placeholder="العلي" required>
+          <span class="error-msg">هذا الحقل مطلوب</span>
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field-group">
+          <label>الجنس <span class="req">*</span></label>
+          <div class="gender-row">
+            <label class="gender-opt"><input type="radio" name="gender" value="male" required> ذكر</label>
+            <label class="gender-opt"><input type="radio" name="gender" value="female"> أنثى</label>
+          </div>
+        </div>
+        <div class="field-group">
+          <label>فصيلة الدم <span class="req">*</span></label>
+          <select name="blood_type" required>
+            <option value="">— اختر —</option>
+            <option>A+</option><option>A-</option>
+            <option>B+</option><option>B-</option>
+            <option>AB+</option><option>AB-</option>
+            <option>O+</option><option>O-</option>
+          </select>
+          <span class="error-msg">هذا الحقل مطلوب</span>
+        </div>
+      </div>
+      <div class="field-row three">
+        <div class="field-group">
+          <label>سنة الميلاد <span class="req">*</span></label>
+          <select name="birth_year" id="birth_year" required>
+            <option value="">— السنة —</option>
+          </select>
+          <span class="error-msg">هذا الحقل مطلوب</span>
+        </div>
+        <div class="field-group">
+          <label>شهر الميلاد <span class="req">*</span></label>
+          <select name="birth_month" required>
+            <option value="">— الشهر —</option>
+            <option value="1">يناير</option><option value="2">فبراير</option>
+            <option value="3">مارس</option><option value="4">أبريل</option>
+            <option value="5">مايو</option><option value="6">يونيو</option>
+            <option value="7">يوليو</option><option value="8">أغسطس</option>
+            <option value="9">سبتمبر</option><option value="10">أكتوبر</option>
+            <option value="11">نوفمبر</option><option value="12">ديسمبر</option>
+          </select>
+          <span class="error-msg">هذا الحقل مطلوب</span>
+        </div>
+        <div class="field-group">
+          <label>يوم الميلاد <span class="req">*</span></label>
+          <select name="birth_day" id="birth_day" required>
+            <option value="">— اليوم —</option>
+          </select>
+          <span class="error-msg">هذا الحقل مطلوب</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title"><span class="section-icon">📞</span> معلومات الاتصال</div>
+      <div class="field-row">
+        <div class="field-group">
+          <label>البريد الإلكتروني <span class="req">*</span></label>
+          <input type="email" name="email" placeholder="example@email.com" required>
+          <span class="error-msg">أدخل بريداً إلكترونياً صحيحاً</span>
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field-group">
+          <label>هاتف ولي الأمر <span class="req">*</span></label>
+          <input type="tel" name="guardian_phone" placeholder="07XXXXXXXXX" maxlength="11" pattern="\d{11}" title="يجب أن يكون رقم الهاتف 11 رقماً" oninput="this.value=this.value.replace(/\D/g,'').slice(0,11)" required>
+          <span class="error-msg">يجب أن يكون الرقم 11 خانة</span>
+        </div>
+        <div class="field-group">
+          <label>صلة القرابة <span class="req">*</span></label>
+          <select name="guardian_relation" required>
+            <option value="">— اختر —</option>
+            <option>الأب</option><option>الأم</option>
+            <option>الأخ</option><option>الأخت</option><option>آخر</option>
+          </select>
+          <span class="error-msg">هذا الحقل مطلوب</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title"><span class="section-icon">🏠</span> العنوان</div>
+      <div class="field-row full">
+        <div class="field-group">
+          <label>عنوان السكن <span class="req">*</span></label>
+          <input type="text" name="address" placeholder="الشارع والحي" required maxlength="100" id="addressInput">
+          <span class="char-counter" id="addressCounter">0 / 100</span>
+          <span class="error-msg">هذا الحقل مطلوب</span>
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field-group">
+          <label>المحافظة <span class="req">*</span></label>
+          <select name="province" required>
+            <option value="">— اختر —</option>
+            <option>بغداد</option><option>البصرة</option><option>نينوى</option>
+            <option>أربيل</option><option>كركوك</option><option>النجف</option>
+            <option>كربلاء</option><option>الأنبار</option><option>ديالى</option>
+            <option>المثنى</option><option>ذي قار</option><option>ميسان</option>
+            <option>القادسية</option><option>واسط</option><option>بابل</option>
+            <option>صلاح الدين</option><option>دهوك</option><option>السليمانية</option>
+          </select>
+          <span class="error-msg">هذا الحقل مطلوب</span>
+        </div>
+        <div class="field-group">
+          <label>الرمز البريدي</label>
+          <input type="text" inputmode="numeric" name="zip" placeholder="10001" maxlength="5" oninput="this.value=this.value.replace(/\D/g,'').slice(0,5)">
+          <span class="error-msg">الرمز البريدي يجب أن يكون 5 أرقام</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title"><span class="section-icon">📚</span> المعلومات الدراسية</div>
+      <div class="field-row">
+        <div class="field-group">
+          <label>الصف الدراسي <span class="req">*</span></label>
+          <select name="grade" required>
+            <option value="">— اختر —</option>
+            <option>الأول الابتدائي</option><option>الثاني الابتدائي</option>
+            <option>الثالث الابتدائي</option><option>الرابع الابتدائي</option>
+            <option>الخامس الابتدائي</option><option>السادس الابتدائي</option>
+            <option>الأول المتوسط</option><option>الثاني المتوسط</option>
+            <option>الثالث المتوسط</option>
+            <option>الأول الإعدادي</option><option>الثاني الإعدادي</option>
+            <option>الثالث الإعدادي</option>
+          </select>
+          <span class="error-msg">هذا الحقل مطلوب</span>
+        </div>
+        <div class="field-group">
+          <label>العام الدراسي <span class="req">*</span></label>
+          <select name="academic_year" required>
+            <option value="">— اختر —</option>
+            <option>2025 - 2026</option>
+            <option>2026 - 2027</option>
+          </select>
+          <span class="error-msg">هذا الحقل مطلوب</span>
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field-group">
+          <label>المدرسة السابقة</label>
+          <input type="text" name="prev_school" placeholder="اسم المدرسة السابقة (إن وُجدت)">
+        </div>
+        <div class="field-group">
+          <label>الرقم الوطني للطالب</label>
+          <input type="text" name="national_id" placeholder="12 رقماً">
+        </div>
+      </div>
+    </div>
+
+    <p class="note">الحقول المعلّمة بـ <span class="req">*</span> إلزامية · جميع البيانات تُحفظ بسرية تامة</p>
+    <div class="submit-wrap">
+      <button type="submit" class="submit-btn">تسجيل الطالب ←</button>
+    </div>
+
+  </div>
+</div>
+
+<div class="success-overlay" id="successOverlay">
+  <div class="success-box">
+    <span class="success-icon">🎉</span>
+    <h2>تم التسجيل بنجاح!</h2>
+    <p>سيتم التواصل معك قريباً على رقم ولي الأمر المُدخل</p>
+    <button class="success-close" onclick="document.getElementById('successOverlay').classList.remove('show')">حسناً</button>
+  </div>
+</div>
+
+<script>
+  const yearSel = document.getElementById('birth_year');
+  for (let y = 2021; y >= 2009; y--) {
+    const o = document.createElement('option');
+    o.value = y; o.textContent = y;
+    yearSel.appendChild(o);
+  }
+  const daySel = document.getElementById('birth_day');
+  for (let d = 1; d <= 31; d++) {
+    const o = document.createElement('option');
+    o.value = d; o.textContent = d;
+    daySel.appendChild(o);
+  }
+
+  document.querySelectorAll('input[required], select[required]').forEach(el => {
+    el.addEventListener('blur', () => {
+      if (!el.value.trim()) {
+        el.classList.add('error'); el.classList.remove('valid');
+      } else {
+        el.classList.remove('error'); el.classList.add('valid');
+      }
+    });
+    el.addEventListener('input', () => {
+      if (el.value.trim()) {
+        el.classList.remove('error'); el.classList.add('valid');
+      }
+    });
+  });
+
+  const phoneInput = document.querySelector('input[name="guardian_phone"]');
+  if (phoneInput) {
+    phoneInput.addEventListener('blur', () => {
+      if (phoneInput.value.length !== 11) {
+        phoneInput.classList.add('error'); phoneInput.classList.remove('valid');
+      }
+    });
+  }
+
+  const zipInput = document.querySelector('input[name="zip"]');
+  if (zipInput) {
+    zipInput.addEventListener('blur', () => {
+      if (zipInput.value && (zipInput.value < 10000 || zipInput.value > 99999)) {
+        zipInput.classList.add('error'); zipInput.classList.remove('valid');
+      }
+    });
+  }
+
+  const addr = document.getElementById('addressInput');
+  const counter = document.getElementById('addressCounter');
+  if (addr) {
+    addr.addEventListener('input', () => {
+      const len = addr.value.length;
+      counter.textContent = len + ' / 100';
+      counter.classList.toggle('warn', len > 80);
+    });
+  }
+
+  const allFields = document.querySelectorAll('input[required], select[required]');
+  function updateFill() {
+    const filled = [...allFields].filter(f => f.value.trim() !== '').length;
+    const pct = Math.round((filled / allFields.length) * 100);
+    document.getElementById('fillBar').style.width = pct + '%';
+    document.getElementById('fillPct').textContent = pct + '%';
+  }
+  allFields.forEach(f => f.addEventListener('input', updateFill));
+  allFields.forEach(f => f.addEventListener('change', updateFill));
+
+   document.querySelector('.submit-btn').addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const required = document.querySelectorAll('input[required], select[required]');
+    let allFilled = true;
+
+    required.forEach(el => {
+      if (!el.value.trim()) {
+        el.classList.add('error');
+        el.classList.remove('valid');
+        allFilled = false;
+      }
+    });
+
+    if (phoneInput && phoneInput.value.length !== 11) {
+      phoneInput.classList.add('error');
+      allFilled = false;
+    }
+
+    if (!allFilled) return;
+
+    document.getElementById('successOverlay').classList.add('show');
+
+    document.querySelectorAll('input:not([type="radio"]), select').forEach(el => {
+      el.value = '';
+      el.classList.remove('valid', 'error');
+    });
+    document.querySelectorAll('input[type="radio"]').forEach(el => el.checked = false);
+    document.getElementById('addressCounter').textContent = '0 / 100';
+    document.getElementById('fillBar').style.width = '0%';
+    document.getElementById('fillPct').textContent = '0%';
+  });
+</script>
+
+</body>
+</html>
